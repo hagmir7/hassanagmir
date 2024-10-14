@@ -1,0 +1,14 @@
+
+
+@import '@fontsource/overpass';
+@import "@fontsource/overpass/400.css";
+@import "@fontsource/overpass/400-italic.css";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Overpass";
+}
