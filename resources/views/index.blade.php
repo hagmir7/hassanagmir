@@ -8,23 +8,28 @@
             <h1 class="text-3xl font-bold">Hi there, I&#x27;m <span
                     class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Hassan</span>
                 👋</h1>
-            <p class="mt-6 text-xl leading-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus
-                <!-- --> <a class="text-cyan-400 hover:underline" href="/demo/astro-boilerplate">malesuada</a>
+            <p class="mt-6 text-xl leading-9">A Passionate Full Stack Developer From Morocco
+                <!-- --> <a class="text-cyan-400 hover:underline" href="#!">malesuada</a>
                 <!-- -->nisi tellus, non imperdiet nisi tempor at.
                 Lorem ipsum dolor sit amet,
-                <!-- --> <a class="text-cyan-400 hover:underline" href="/demo/astro-boilerplate">consectetur</a>
+                <!-- --> <a class="text-cyan-400 hover:underline" href="#!">consectetur</a>
                 <!-- -->adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore.
             </p>
-            <div class="mt-3 flex gap-1"><a href="/demo/astro-boilerplate"><img class="h-12 w-12 hover:translate-y-1"
-                        src="/images/twitter-icon.png" alt="Twitter icon" loading="lazy" /></a><a
-                    href="/demo/astro-boilerplate"><img class="h-12 w-12 hover:translate-y-1"
-                        src="/images/facebook-icon.png" alt="Facebook icon" loading="lazy" /></a><a
-                    href="/demo/astro-boilerplate"><img class="h-12 w-12 hover:translate-y-1"
-                        src="/images/linkedin-icon.png" alt="Linkedin icon" loading="lazy" /></a><a
-                    href="/demo/astro-boilerplate"><img class="h-12 w-12 hover:translate-y-1"
-                        src="/images/youtube-icon.png" alt="Youtube icon" loading="lazy" /></a></div>
+            <div class="mt-3 flex gap-1">
+                <a href="#!">
+                    <img class="h-12 w-12 hover:translate-y-1" src="/images/twitter-icon.png" alt="Twitter icon" loading="lazy" />
+                </a>
+                <a href="#!">
+                    <img class="h-12 w-12 hover:translate-y-1" src="/images/facebook-icon.png" alt="Facebook icon" loading="lazy" />
+                </a>
+                <a href="#!">
+                    <img class="h-12 w-12 hover:translate-y-1" src="/images/linkedin-icon.png" alt="Linkedin icon" loading="lazy" />
+                </a>
+                <a href="#!">
+                    <img class="h-12 w-12 hover:translate-y-1" src="/images/youtube-icon.png" alt="Youtube icon" loading="lazy" />
+                </a>
+            </div>
         </div>
         <div class="shrink-0"><img class="h-80 w-64" src="/images/avatar.svg" alt="Avatar image" loading="lazy" />
         </div>
@@ -36,12 +41,12 @@
             class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Projects</span></div>
     <div class="flex flex-col gap-6">
         <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-            <div class="shrink-0"><a href="/demo/astro-boilerplate"><img class="h-36 w-36 hover:translate-y-1"
+            <div class="shrink-0"><a href="#!"><img class="h-36 w-36 hover:translate-y-1"
                         src="assets/images/project-web-design.png" alt="Project Web Design" loading="lazy" /></a>
             </div>
             <div>
                 <div class="flex flex-col items-center gap-y-2 md:flex-row"><a class="hover:text-cyan-400"
-                        href="/demo/astro-boilerplate">
+                        href="#!">
                         <div class="text-xl font-semibold">Project 1</div>
                     </a>
                     <div class="ml-3 flex gap-2">
@@ -61,12 +66,12 @@
             </div>
         </div>
         <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-            <div class="shrink-0"><a href="/demo/astro-boilerplate"><img class="max-h-32 hover:translate-y-1"
+            <div class="shrink-0"><a href="#!"><img class="max-h-32 hover:translate-y-1"
                         src="https://mobdie.ma/assets/images/logo.png" alt="Project Fire" loading="lazy" /></a>
             </div>
             <div>
                 <div class="flex flex-col items-center gap-y-2 md:flex-row"><a class="hover:text-cyan-400"
-                        href="/demo/astro-boilerplate">
+                        href="#!">
                         <div class="text-xl font-semibold">Project 2</div>
                     </a>
                     <div class="ml-3 flex gap-2">
@@ -84,12 +89,12 @@
             </div>
         </div>
         <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-            <div class="shrink-0"><a href="/demo/astro-boilerplate"><img class="max-h-32 hover:translate-y-1"
+            <div class="shrink-0"><a href="#!"><img class="max-h-32 hover:translate-y-1"
                         src="https://lamssafashion.com/assets/imgs/rounded-logo.png" alt="Project Maps"
                         loading="lazy" /></a></div>
             <div>
                 <div class="flex flex-col items-center gap-y-2 md:flex-row"><a class="hover:text-cyan-400"
-                        href="/demo/astro-boilerplate">
+                        href="#!">
                         <div class="text-xl font-semibold">Project 3</div>
                     </a>
                     <div class="ml-3 flex gap-2">
@@ -116,14 +121,14 @@
             <div>Recent <span
                     class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Posts</span>
             </div>
-            <div class="text-sm"><a href="/demo/astro-boilerplate/posts">View all Posts →</a></div>
+            <div class="text-sm"><a href="#!/posts">View all Posts →</a></div>
         </div>
     </div>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3"><a class="hover:translate-y-1"
-            href="/demo/astro-boilerplate/posts/sixth-post">
+            href="#!/posts/sixth-post">
             <div class="overflow-hidden rounded-md bg-slate-800">
                 <div class="aspect-w-3 aspect-h-2"><img class="h-full w-full object-cover object-center"
-                        src="/demo/astro-boilerplate/assets/images/image-post.jpeg" alt="Image post" loading="lazy" />
+                        src="#!/assets/images/image-post.jpeg" alt="Image post" loading="lazy" />
                 </div>
                 <div class="px-3 pt-4 pb-6 text-center">
                     <h2 class="text-xl font-semibold">Typography example</h2>
@@ -132,10 +137,10 @@
                         esse non molestias eos excepturi.</div>
                 </div>
             </div>
-        </a><a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/fifth-post">
+        </a><a class="hover:translate-y-1" href="#!/posts/fifth-post">
             <div class="overflow-hidden rounded-md bg-slate-800">
                 <div class="aspect-w-3 aspect-h-2"><img class="h-full w-full object-cover object-center"
-                        src="/demo/astro-boilerplate/assets/images/image-post2.jpeg" alt="Image post 2"
+                        src="#!/assets/images/image-post2.jpeg" alt="Image post 2"
                         loading="lazy" /></div>
                 <div class="px-3 pt-4 pb-6 text-center">
                     <h2 class="text-xl font-semibold">5th Lorem ipsum dolor sit</h2>
@@ -144,10 +149,10 @@
                         esse non molestias eos excepturi.</div>
                 </div>
             </div>
-        </a><a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/forth-post">
+        </a><a class="hover:translate-y-1" href="#!/posts/forth-post">
             <div class="overflow-hidden rounded-md bg-slate-800">
                 <div class="aspect-w-3 aspect-h-2"><img class="h-full w-full object-cover object-center"
-                        src="/demo/astro-boilerplate/assets/images/image-post3.jpeg" alt="Image post 3"
+                        src="#!/assets/images/image-post3.jpeg" alt="Image post 3"
                         loading="lazy" /></div>
                 <div class="px-3 pt-4 pb-6 text-center">
                     <h2 class="text-xl font-semibold">4th Lorem ipsum dolor sit</h2>
