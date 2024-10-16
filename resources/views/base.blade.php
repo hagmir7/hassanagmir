@@ -10,7 +10,7 @@
 <body class="bg-slate-900 text-gray-100">
     <div class="mx-auto max-w-screen-lg px-3 py-6">
         <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a
-                href="/demo/astro-boilerplate">
+                href="/">
                 <div class="flex gap-2 justify-center items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
                     {{-- <img src="/logo.png" class="w-14 rounded-full object-cover" alt="Hassan Agmir"> --}}
                     <span class="text-2xl">Hassan Agmir</span>
@@ -18,7 +18,7 @@
             </a>
             <nav>
                 <ul class="flex gap-x-3 font-medium text-gray-200">
-                    <li class="hover:text-white"><a href="/demo/astro-boilerplate/posts">Blogs</a></li>
+                    <li class="hover:text-white"><a href="/posts">Blogs</a></li>
                     <li class="hover:text-white"><a href="/projects">Projects</a></li>
                     <li class="hover:text-white"><a target="_blank" href="https://github.com/hagmir7">GitHub</a></li>
 
