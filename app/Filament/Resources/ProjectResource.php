@@ -53,15 +53,14 @@ class ProjectResource extends Resource
                                 Forms\Components\FileUpload::make('image')
                                     ->image()
                                     ->required(),
-                                Forms\Components\TextInput::make('order')
-                                    ->numeric(),
+
+                        Forms\Components\Select::make('tags')
+                                ->multiple()
+                                ->preload()
+                                ->relationship('tags', 'name')
 
                             ])->columnSpan(1)
-
-
                     ])
-
-
             ]);
     }
 
