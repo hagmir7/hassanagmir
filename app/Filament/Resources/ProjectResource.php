@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Enums\ProjectStatusEnums;
 use App\Filament\Resources\ProjectResource\Pages;
 use App\Filament\Resources\ProjectResource\RelationManagers;
 use App\Models\Project;
@@ -32,14 +33,15 @@ class ProjectResource extends Resource
                                 Forms\Components\TextInput::make('name')
                                     ->required()
                                     ->maxLength(255),
-                                Forms\Components\TextInput::make('status')
-                                    ->required()
-                                    ->numeric(),
+                                Forms\Components\Select::make('status')
+                                    ->options(ProjectStatusEnums::class)
+                                    ->native(false)
+                                    ->required(),
 
                                 Forms\Components\Textarea::make('description')
                                     ->required()
                                     ->columnSpanFull(),
-                                Forms\Components\Textarea::make('content')
+                                Forms\Components\RichEditor::make('content')
                                     ->required()
                                     ->columnSpanFull(),
 
@@ -69,6 +71,7 @@ class ProjectResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('order')
