@@ -9,7 +9,7 @@
 <div class="mx-auto max-w-screen-lg px-3 py-6">
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         @foreach ($posts as $post)
-        <a class="hover:translate-y-1" href="{{ route('post.show', $post->slug) }}">
+        <a class="hover:translate-y-1" href="{{ route('blog.show', $post->slug) }}">
             <div class="overflow-hidden rounded-md bg-slate-800">
                 <div class="aspect-w-3 aspect-h-2">
                     <img class="h-full w-full object-cover object-center" src="{{ Storage::url($post->image) }}" alt="Image post" loading="lazy" />

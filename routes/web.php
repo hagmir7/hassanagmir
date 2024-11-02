@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProjectController;
 use App\Models\Post;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
@@ -11,13 +13,16 @@ Route::get('/', function () {
 });
 
 
-Route::get('/blogs', function () {
-    $posts = Post::paginate(10);
-    return view('post.list', compact('posts'));
+
+Route::controller(PostController::class)->prefix('blogs')->group(function(){
+    Route::get('', 'list')->name('blog.list');
+    Route::get('/{post:slug}', 'show')->name('blog.show');
 });
 
 
-Route::get('/blogs/{post:slug}', function(Post $post){
-    return view('post.show', compact('post'));
-})->name('post.show');
+
+Route::controller(ProjectController::class)->prefix('projects')->group(function(){
+    Route::get('', 'list')->name('projects.list');
+    Route::get('/{project:slug}', 'show')->name('projects.show');
+});
 

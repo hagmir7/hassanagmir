@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ isset($title) ? $title : config('app.name') }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-slate-900 text-gray-100">
     <div class="mx-auto max-w-screen-lg px-3 py-6">
-        <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a
-                href="/">
-                <div class="flex gap-2 justify-center items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
+        <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/">
+                <div
+                    class="flex gap-2 justify-center items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
                     {{-- <img src="/logo.png" class="w-14 rounded-full object-cover" alt="Hassan Agmir"> --}}
                     <span class="text-2xl">Hassan Agmir</span>
                 </div>
@@ -21,7 +22,6 @@
                     <li class="hover:text-white"><a href="/blogs">Blogs</a></li>
                     <li class="hover:text-white"><a href="/projects">Projects</a></li>
                     <li class="hover:text-white"><a target="_blank" href="https://github.com/hagmir7">GitHub</a></li>
-
                 </ul>
             </nav>
         </div>
@@ -34,8 +34,9 @@
                 <div class="text-3xl font-bold">Subscribe to my <span
                         class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Newsletters</span>
                 </div>
-                <p class="mt-3 text-gray-300">Stay updated with the latest programming tips, tricks, and IT insights! Join my community to receive exclusive content
-                on coding best practices.</p>
+                <p class="mt-3 text-gray-300">Stay updated with the latest programming tips, tricks, and IT insights!
+                    Join my community to receive exclusive content
+                    on coding best practices.</p>
             </div>
             <div class="w-full sm:w-5/12">
                 <form
