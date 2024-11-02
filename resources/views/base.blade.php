@@ -13,14 +13,15 @@
         <div class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"><a href="/">
                 <div
                     class="flex gap-2 justify-center items-center bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-xl font-bold text-transparent">
-                    {{-- <img src="/logo.png" class="w-14 rounded-full object-cover" alt="Hassan Agmir"> --}}
-                    <span class="text-2xl">Hassan Agmir</span>
+                    <img src="/logo.png" class="mr-1 h-7 w-7 stroke-cyan-600" alt="Hassan Agmir">
+                    <span class="text-2xl mt-1">Hassan Agmir</span>
                 </div>
             </a>
             <nav>
                 <ul class="flex gap-x-3 font-medium text-gray-200">
                     <li class="hover:text-white"><a href="/blogs">Blogs</a></li>
                     <li class="hover:text-white"><a href="/projects">Projects</a></li>
+                    <li class="hover:text-white"><a href="/contact">Contact me</a></li>
                     <li class="hover:text-white"><a target="_blank" href="https://github.com/hagmir7">GitHub</a></li>
                 </ul>
             </nav>
@@ -31,9 +32,7 @@
     <div class="mx-auto max-w-screen-lg px-3 py-6">
         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div class="sm:w-7/12">
-                <div class="text-3xl font-bold">Subscribe to my <span
-                        class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Newsletters</span>
-                </div>
+                <div class="text-xl md:text-3xl font-bold">Subscribe to my <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Newsletters</span></div>
                 <p class="mt-3 text-gray-300">Stay updated with the latest programming tips, tricks, and IT insights!
                     Join my community to receive exclusive content
                     on coding best practices.</p>
