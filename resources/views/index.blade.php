@@ -5,10 +5,12 @@
 <x-section />
 
 <div class="mx-auto max-w-screen-lg px-3 py-6">
-    <div class="mb-6 text-2xl font-bold">Recent <span
-            class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Projects</span></div>
-    <div class="flex flex-col gap-6">
+    <div class="mb-6 text-xl md:text-2xl font-bold">
+        <span>Recent</span>
+        <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Projects</span>
+    </div>
 
+    <div class="flex flex-col gap-6">
         @foreach ($projects as $project)
         <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
             <div class="shrink-0">
@@ -44,10 +46,11 @@
 
 
 <div class="mx-auto max-w-screen-lg px-3 py-6">
-    <div class="mb-6 text-2xl font-bold">
+    <div class="mb-6 text-xl md:text-2xl font-bold">
         <div class="flex items-baseline justify-between">
-            <div>Recent <span
-                    class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Posts</span>
+            <div>
+                <span>Recent</span>
+                <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Posts</span>
             </div>
             <div class="text-sm"><a href="#!/posts">View all Posts →</a></div>
         </div>

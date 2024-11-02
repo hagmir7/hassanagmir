@@ -5,7 +5,7 @@
                 <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Hassan</span>
                 👋
             </h1>
-            <p class="mt-6 text-xl leading-9">A Passionate Full Stack Developer From Morocco, With over 20 projects
+            <p class="mt-6 text-lg md:text-xl text-justify md:text-left leading-9">A Passionate Full Stack Developer From Morocco, With over 20 projects
                 under my belt, I specialize in creating efficient and scalable web applications. I’m passionate
                 about coding and love turning ideas into functional digital solution.
             </p>
