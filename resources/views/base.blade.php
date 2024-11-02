@@ -18,7 +18,7 @@
                 </div>
             </a>
             <nav>
-                <ul class="flex gap-x-3 font-medium text-gray-200">
+                <ul class="flex gap-x-3 font-medium justify-center items-center md:items-end mt-3 md:mt-0 text-gray-200">
                     <li class="hover:text-white"><a href="/blogs">Blogs</a></li>
                     <li class="hover:text-white"><a href="/projects">Projects</a></li>
                     <li class="hover:text-white"><a href="/contact">Contact me</a></li>
