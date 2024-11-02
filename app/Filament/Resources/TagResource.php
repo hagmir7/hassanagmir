@@ -23,13 +23,15 @@ class TagResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required(),
-                Forms\Components\Textarea::make('icon')
-                    ->columnSpanFull(),
-                Forms\Components\Textarea::make('description')
-                    ->columnSpanFull(),
-                Forms\Components\TextInput::make('slug'),
+                Forms\Components\Section::make()
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required(),
+                        Forms\Components\Textarea::make('icon')
+                            ->columnSpanFull(),
+                        Forms\Components\Textarea::make('description')
+                            ->columnSpanFull(),
+                    ])
             ]);
     }
 

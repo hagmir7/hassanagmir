@@ -34,8 +34,8 @@
                 <div class="text-3xl font-bold">Subscribe to my <span
                         class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Newsletters</span>
                 </div>
-                <p class="mt-3 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero
-                    esse non molestias eos excepturi, inventore atque cupiditate.</p>
+                <p class="mt-3 text-gray-300">Stay updated with the latest programming tips, tricks, and IT insights! Join my community to receive exclusive content
+                on coding best practices.</p>
             </div>
             <div class="w-full sm:w-5/12">
                 <form
