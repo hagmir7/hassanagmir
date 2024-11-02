@@ -18,7 +18,7 @@
             </a>
             <nav>
                 <ul class="flex gap-x-3 font-medium text-gray-200">
-                    <li class="hover:text-white"><a href="/posts">Blogs</a></li>
+                    <li class="hover:text-white"><a href="/blogs">Blogs</a></li>
                     <li class="hover:text-white"><a href="/projects">Projects</a></li>
                     <li class="hover:text-white"><a target="_blank" href="https://github.com/hagmir7">GitHub</a></li>
 
