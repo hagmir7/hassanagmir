@@ -19,8 +19,9 @@
                  </a>
             </div>
             <div>
-                <div class="flex flex-col items-center gap-y-2 md:flex-row"><a class="hover:text-cyan-400" href="#!">
-                        <div class="text-xl font-semibold">{{ $project->name }}</div>
+                <div class="flex flex-col items-center gap-y-2 md:flex-row">
+                    <a class="hover:text-cyan-400" href="#!">
+                        <div class="text-xl font-semibold mt-3 md:mt-0">{{ $project->name }}</div>
                     </a>
                     <div class="ml-3 flex gap-2">
                       @foreach ($project->tags as $tag)

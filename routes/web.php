@@ -26,3 +26,8 @@ Route::controller(ProjectController::class)->prefix('projects')->group(function(
     Route::get('/{project:slug}', 'show')->name('projects.show');
 });
 
+
+Route::get('/contact', function(){
+    return view('contact');
+})->name('contact');
+
