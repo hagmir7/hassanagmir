@@ -1,10 +1,38 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ isset($title) ? $title : config('app.name') }}</title>
+    <meta name="keywords" content="Hassan agmir, full stack devloper, agmir, hassan, web developer, programmer">
+    <meta name="description" content="Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under my belt, I specialize in creating efficient and scalable web applications. I’m passionate about coding and love turning ideas into functional digital solution. ">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ isset($title) ? $title : config('app.name') }}">
+    <meta itemprop="description" content="Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under my belt, I specialize in creating efficient and scalable web applications. I’m passionate about coding and love turning ideas into functional digital solution. ">
+    <meta itemprop="image" content="/logo.png">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="hass_agmir">
+    <meta name="twitter:title" content="{{ isset($title) ? $title : config('app.name') }}">
+    <meta name="twitter:description" content="Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under my belt, I specialize in creating efficient and scalable web applications. I’m passionate about coding and love turning ideas into functional digital solution. ">
+    <meta name="twitter:creator" content="@hassan_agmir">
+    <meta name="twitter:site" content="@hassan_agmir">
+    <meta name="twitter:image" content="/logo.png">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ isset($title) ? $title : config('app.name') }}" />
+    <meta property="og:type" content="webiste" />
+    <meta property="og:url" content="{{ request()->fullUrl() }}" />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:description" content="Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under my belt, I specialize in creating efficient and scalable web applications. I’m passionate about coding and love turning ideas into functional digital solution. " />
+    <meta property="og:local" content="en" />
+
+    <meta name="author" content="www.hassanagmir.com">
+    <link rel="canonical" href="{{ request()->fullUrl() }}" />
+
+    <link rel="icon" type="image/png" href="/logo.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/logo.pngg" sizes="32x32">
+    <link rel="icon" type="image/png" href="/logo.png" sizes="512x512">
+    <link rel="icon" type="image/png" href="/logo.png" sizes="192x192">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 

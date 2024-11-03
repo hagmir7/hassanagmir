@@ -3,7 +3,7 @@
 <div class="mx-auto max-w-screen-lg px-3 py-6">
     <div class="text-center">
         <h1 class="text-3xl font-bold">Recent Posts</h1>
-        <div class="mt-3 text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="mt-3 text-gray-200">Latest programming tips, tricks, and IT insights!</div>
     </div>
 </div>
 <div class="mx-auto max-w-screen-lg px-3 py-6">
