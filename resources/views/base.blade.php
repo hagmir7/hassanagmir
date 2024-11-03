@@ -29,24 +29,7 @@
     </div>
 
     @yield('content')
-    <div class="mx-auto max-w-screen-lg px-3 py-6">
-        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-            <div class="sm:w-7/12">
-                <div class="text-xl md:text-3xl font-bold">Subscribe to my <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Newsletters</span></div>
-                <p class="mt-3 text-gray-300">Stay updated with the latest programming tips, tricks, and IT insights!
-                    Join my community to receive exclusive content
-                    on coding best practices.</p>
-            </div>
-            <div class="w-full sm:w-5/12">
-                <form
-                    class="flex rounded-full bg-slate-800 px-4 py-2 focus-within:ring-2 focus-within:ring-cyan-600 hover:ring-2 hover:ring-cyan-600">
-                    <input class="w-full appearance-none bg-slate-800 focus:outline-none" /><button
-                        class="ml-2 shrink-0 rounded-full bg-gradient-to-br from-sky-500 to-cyan-400 px-3 py-1 text-sm font-medium hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50"
-                        type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    <x-footer />
 
     <div class="mx-auto max-w-screen-lg px-3 py-6">
         <div class="border-t border-gray-600 pt-5">
@@ -61,4 +44,17 @@
         </div>
 </body>
 
+<script>
+    const tags = document.querySelectorAll('.tags');
+    const colors = [
+        'bg-lime-400 text-lime-900',
+        'bg-fuchsia-400 text-fuchsia-900',
+        'bg-sky-400 text-sky-900',
+        'bg-rose-400 text-rose-900'
+    ];
+
+    tags.forEach(function (tag, index) {
+        tag.classList.add(...colors[index % colors.length].split(' '));
+    });
+</script>
 </html>
