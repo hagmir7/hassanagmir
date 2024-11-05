@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="max-w-2xl m-auto">
-    <div class="col-lg-12">
+    <div class="col-lg-12 px-3">
         <h1 class="text-3xl font-bold mt-2" id="send-us-a-message">Contact me</h1>
         <div>
             <p>I'd love to hear from you! Whether you have questions about my services, I'm here to help.</p>

@@ -8,7 +8,7 @@
         <div class="block md:flex md:gap-2">
             <input class="p-2 rounded-md w-full appearance-none bg-slate-800 focus:outline-none" placeholder="Full Name"
                 type="text" wire:model="full_name">
-            <input class="p-2 rounded-md w-full appearance-none bg-slate-800 focus:outline-none" placeholder="Email"
+            <input class="mt-2 md:mt-0 p-2 rounded-md w-full appearance-none bg-slate-800 focus:outline-none" placeholder="Email"
                 type="email" wire:model="email">
 
         </div>
