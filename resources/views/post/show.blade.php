@@ -12,7 +12,7 @@
             <div class="aspect-w-3 aspect-h-2">
                 <img class="h-full w-full rounded-lg object-cover object-center" src="{{ Storage::url($post->image) }}" alt="Image post" loading="lazy">
             </div>
-            <div class="prose mt-8 space-y-0 prose-img:rounded-lg text-left prose-strong:text-gray-200 text-gray-300 prose-a:text-white">
+            <div class="prose mt-8 space-y-0 prose-h3:text-white prose-img:rounded-lg text-left prose-strong:text-gray-200 text-gray-300 prose-a:text-white">
                 {!! $post->content !!}
             </div>
         </div>
