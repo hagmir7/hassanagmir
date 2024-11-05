@@ -9,6 +9,7 @@
         <span>Recent</span>
         <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Projects</span>
     </div>
+    <div class="text-sm"><a href="{{ route('projects.list') }}">View all Projects →</a></div>
 
     <div class="flex flex-col gap-6">
         @foreach ($projects as $project)
@@ -47,7 +48,7 @@
                 <span>Recent</span>
                 <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Posts</span>
             </div>
-            <div class="text-sm"><a href="#!/posts">View all Posts →</a></div>
+            <div class="text-sm"><a href="{{ route('blog.list') }}">View all Posts →</a></div>
         </div>
     </div>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
