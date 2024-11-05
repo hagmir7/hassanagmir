@@ -17,19 +17,12 @@
                 <div class="flex flex-col items-center gap-y-2 md:flex-row"><a class="hover:text-cyan-400" href="#!">
                         <div class="text-xl font-semibold">{{ $project->name }}</div>
                     </a>
-                    <div class="ml-3 flex gap-2">
+                    <div class="ml-0 md:ml-3 flex gap-2 flex-wrap">
                         @foreach ($project->tags as $tag)
                         <div class="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">
                             {{ $tag->name }}
                         </div>
                         @endforeach
-
-                        <div class="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Web design
-                        </div>
-                        <div class="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">Tailwind.css
-                        </div>
-                        <div class="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">TypeScript
-                        </div>
                     </div>
                 </div>
                 <p class="mt-3 text-gray-400">{{ $project->description }}</p>
