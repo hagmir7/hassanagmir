@@ -19,7 +19,7 @@
                     <a class="hover:text-cyan-400" href="#!">
                         <div class="text-xl font-semibold mt-3 md:mt-0">{{ $project->name }}</div>
                     </a>
-                    <div class="ml-0 mdml-3 flex gap-2 flex-wrap">
+                    <div class="ml-0 md:ml-3 flex gap-2 flex-wrap">
                         @foreach ($project->tags as $tag)
                         <div class="rounded-md px-2 py-1 text-xs font-semibold tags">
                             {{ $tag->name }}

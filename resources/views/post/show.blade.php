@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-screen-lg px-3 py-6">
         <h1 class="text-center text-3xl font-bold">{{ $post->title }}</h1>
         <div class="mt-2 text-center text-sm text-gray-400">By
-            <!-- -->Hassane
+            <!-- -->Hassan
             <!-- --> on
             <!-- -->
             <!-- -->{{ $post->created_at->format('M j, Y') }}
