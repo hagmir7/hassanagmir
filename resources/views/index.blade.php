@@ -5,11 +5,14 @@
 <x-section />
 
 <div class="mx-auto max-w-screen-lg px-3 py-6">
-    <div class="mb-6 text-xl md:text-2xl font-bold">
-        <span>Recent</span>
-        <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Projects</span>
+    <div class="flex items-baseline justify-between">
+        <div class="mb-6 text-xl md:text-2xl font-bold">
+            <span>Recent</span>
+            <span class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">Projects</span>
+        </div>
+        <div class="text-sm"><a href="{{ route('projects.list') }}">View all Projects →</a></div>
     </div>
-    <div class="text-sm"><a href="{{ route('projects.list') }}">View all Projects →</a></div>
+
 
     <div class="flex flex-col gap-6">
         @foreach ($projects as $project)
