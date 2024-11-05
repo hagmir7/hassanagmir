@@ -64,7 +64,7 @@
                         alt="Image post" loading="lazy" />
                 </div>
                 <div class="px-3 pt-4 pb-6">
-                    <h2 class="text-xl font-semibold">{{ $post->title }}</h2>
+                    <h2 class="text-lg font-semibold">{{ $post->title }}</h2>
                     <div class="mt-1 text-xs text-gray-400">{{ $post->created_at->format('M j, Y') }}</div>
                     <div class="mt-2 text-sm">{{ Str::limit($post->description, 120, "...") }}</div>
                 </div>
