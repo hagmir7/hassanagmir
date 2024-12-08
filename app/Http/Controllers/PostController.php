@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function list(){
-        $posts = Post::paginate(10);
+        $posts = Post::latest()->paginate(10);
         return view('post.list', compact('posts'));
     }
 

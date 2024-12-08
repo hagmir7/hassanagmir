@@ -25,6 +25,7 @@
     <meta property="og:image" content="/logo.png" />
     <meta property="og:description" content="Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under my belt, I specialize in creating efficient and scalable web applications. I’m passionate about coding and love turning ideas into functional digital solution. " />
     <meta property="og:local" content="en" />
+    <meta name="google-site-verification" content="daLG-sJGDlNerqeQvM5VPB7QcC03s7ujUiNFjKrIC9U" />
 
     <meta name="author" content="www.hassanagmir.com">
     <link rel="canonical" href="{{ request()->fullUrl() }}" />

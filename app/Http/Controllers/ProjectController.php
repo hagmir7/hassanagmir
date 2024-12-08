@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
     public function list(){
-        $projects = Project::paginate(10);
+        $projects = Project::latest()->paginate(10);
         return view('project.list', compact("projects"));
     }
 
