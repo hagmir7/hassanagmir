@@ -10,6 +10,7 @@
             <h2 class="text-xl font-bold mt-2" id="get-in-touch">Get in Touch</h2>
             <ul>
                 <li><strong>Email:</strong> contact@hassanagmir.com</li>
+                <li><strong>Phone:</strong> +212 628382674</li>
                 <li><strong>Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM EST</li>
             </ul>
             <h2 class="text-xl font-bold mt-2" id="send-us-a-message">Send me a Message</h2>
