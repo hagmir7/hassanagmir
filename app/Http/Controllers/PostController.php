@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -14,6 +13,7 @@ class PostController extends Controller
 
     public function show(Post $post){
         $title = $post->title;
-        return view('post.show', compact('post', 'title'));
+        $description = $post->description;
+        return view('post.show', compact('post', 'title', 'description'));
     }
 }
