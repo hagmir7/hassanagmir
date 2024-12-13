@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ isset($title) ? $title : config('app.name') }}</title>
     <meta name="keywords" content="Hassan agmir, full stack devloper, agmir, hassan, web developer, programmer">
-    <meta name="description" content="{{ isset($title) ? $title : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
+    <meta name="description" content="{{ isset($description) ? $description : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{ isset($title) ? $title : config('app.name') }}">
-    <meta itemprop="description" content="{{ isset($title) ? $title : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
+    <meta itemprop="description" content="{{ isset($description) ? $description : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
     <meta itemprop="image" content="/logo.png">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="hass_agmir">
     <meta name="twitter:title" content="{{ isset($title) ? $title : config('app.name') }}">
-    <meta name="twitter:description" content="{{ isset($title) ? $title : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
+    <meta name="twitter:description" content="{{ isset($description) ? $description : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
     <meta name="twitter:creator" content="@hassan_agmir">
     <meta name="twitter:site" content="@hassan_agmir">
     <meta name="twitter:image" content="/logo.png">
@@ -23,7 +23,7 @@
     <meta property="og:type" content="webiste" />
     <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta property="og:image" content="/logo.png" />
-    <meta property="og:description" content="{{ isset($title) ? $title : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}" />
+    <meta property="og:description" content="{{ isset($description) ? $description : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}" />
     <meta property="og:local" content="en" />
     <meta name="google-site-verification" content="daLG-sJGDlNerqeQvM5VPB7QcC03s7ujUiNFjKrIC9U" />
 
