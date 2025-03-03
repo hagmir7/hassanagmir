@@ -27,6 +27,7 @@
     <meta property="og:local" content="en" />
 
     <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
+    <meta name="google-adsense-account" content="ca-pub-4988709924825156">
 
 
     <meta name="author" content="www.hassanagmir.com">
