@@ -7,7 +7,7 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function list(){
-        $posts = Post::latest()->paginate(13);
+        $posts = Post::latest()->paginate(12);
         return view('post.list', compact('posts'));
     }
 
