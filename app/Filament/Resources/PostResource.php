@@ -19,6 +19,11 @@ class PostResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-bars-4';
 
+    public static function getEloquentQuery(): Builder
+    {
+        return Post::query()->latest();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -53,10 +58,8 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title')
-                    ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
-                Tables\Columns\TextColumn::make('slug')
+                Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

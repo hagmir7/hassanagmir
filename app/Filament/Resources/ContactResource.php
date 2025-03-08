@@ -17,7 +17,18 @@ class ContactResource extends Resource
 {
     protected static ?string $model = Contact::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-chat-bubble-bottom-center-text';
+
+    public static function getEloquentQuery(): Builder
+    {
+        return Contact::query()->latest();
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return parent::getEloquentQuery()->where('status', false)->count();
+    }
+
 
     public static function form(Form $form): Form
     {

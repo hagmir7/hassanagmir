@@ -20,6 +20,11 @@ class ProjectResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-briefcase';
 
+    public static function getEloquentQuery(): Builder
+    {
+        return Project::query()->latest();
+    }
+
     public static function form(Form $form): Form
     {
         return $form

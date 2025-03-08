@@ -18,16 +18,16 @@
         @foreach ($projects as $project)
         <div class="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
             <div class="shrink-0">
-                <a href="#!">
+                <span>
                     <img class="h-36 w-36 hover:translate-y-1 rounded-xl" src="{{ Storage::url($project->image) }}"
                         alt="Project Web Design" loading="lazy" />
-                </a>
+                </span>
             </div>
             <div>
                 <div class="flex flex-col items-center gap-y-2 md:flex-row">
-                    <a class="hover:text-cyan-400" href="#!">
+                    <span class="hover:text-cyan-400">
                         <div class="text-xl font-semibold mt-3 md:mt-0">{{ $project->name }}</div>
-                    </a>
+                    </span>
                     <div class="ml-0 md:ml-3 flex gap-2 flex-wrap">
                         @foreach ($project->tags as $tag)
                         <div class="rounded-md px-2 py-1 text-xs font-semibold tags">
