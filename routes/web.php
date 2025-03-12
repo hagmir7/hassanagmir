@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\PageController;
 use App\Models\Post;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +34,9 @@ Route::controller(ProjectController::class)->prefix('projects')->group(function(
     Route::get('', 'list')->name('projects.list');
     Route::get('/{project:slug}', 'show')->name('projects.show');
 });
+
+
+Route::get('/page/{slug}', [PageController::class, 'show'])->name('page.show');
 
 
 Route::get('/contact', function(){
