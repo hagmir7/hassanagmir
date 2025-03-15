@@ -66,7 +66,7 @@
     <x-footer />
 
     <div class="mx-auto max-w-screen-lg px-3 py-6">
-        <div class="border-t border-gray-600 pt-5">
+        <div class="border-t border-gray-600 pt-5 md:flex justify-between">
             <div class="text-sm text-gray-200">© Copyright
                 <!-- -->2025
                 <!-- --> by
@@ -74,6 +74,14 @@
                 <!-- -->.
                 Built with ❤ by Me
                 <!-- -->
+            </div>
+
+            <div>
+                <ul class="flex space-x-3 mt-3 md:mt-0 text-sm">
+                    <li><a href="/contact">Contact us</a></li>
+                    <li><a href="/page/about-us">About us</a></li>
+                    <li><a href="/page/privacy-policy">Privacy policy</a></li>
+                </ul>
             </div>
         </div>
 </body>
