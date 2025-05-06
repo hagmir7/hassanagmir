@@ -22,6 +22,9 @@ Route::get('/', function () {
 });
 
 
+Route::get('/', [PostController::class, 'list'])->name('home');
+
+
 
 Route::controller(PostController::class)->prefix('blogs')->group(function(){
     Route::get('', 'list')->name('blog.list');
