@@ -28,6 +28,7 @@
 
     <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
     <meta name="google-adsense-account" content="ca-pub-4988709924825156">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4988709924825156" crossorigin="anonymous"></script>
 
 
     <meta name="author" content="www.hassanagmir.com">
