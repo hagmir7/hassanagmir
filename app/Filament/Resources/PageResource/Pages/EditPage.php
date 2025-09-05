@@ -2,6 +2,9 @@
 
 namespace App\Filament\Resources\PageResource\Pages;
 
+use Filament\Actions\DeleteAction;
+use Filament\Actions\CreateAction;
+use Filament\Actions\Action;
 use App\Filament\Resources\PageResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
@@ -13,16 +16,16 @@ class EditPage extends EditRecord
     protected function getHeaderActions(): array
     {
         return [
-            Actions\DeleteAction::make()
+            DeleteAction::make()
                 ->color('danger')
                 ->icon('heroicon-o-trash'),
 
-            Actions\CreateAction::make()
+            CreateAction::make()
                 ->color('success')
                 ->url('/admin/pages/create')
                 ->icon('heroicon-o-plus-circle'),
 
-            Actions\Action::make('view')
+            Action::make('view')
                 ->label(__("Voir"))
                 ->color('info')
                 ->url(route('page.show', $this->record->slug))

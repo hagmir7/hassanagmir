@@ -2,11 +2,19 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Schemas\Schema;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\EditAction;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use App\Filament\Resources\EmailResource\Pages\ListEmails;
+use App\Filament\Resources\EmailResource\Pages\CreateEmail;
+use App\Filament\Resources\EmailResource\Pages\EditEmail;
 use App\Filament\Resources\EmailResource\Pages;
 use App\Filament\Resources\EmailResource\RelationManagers;
 use App\Models\Email;
 use Filament\Forms;
-use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -17,16 +25,16 @@ class EmailResource extends Resource
 {
     protected static ?string $model = Email::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-at-symbol';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-at-symbol';
 
 
 
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('email')
+        return $schema
+            ->components([
+                TextInput::make('email')
                     ->email()
                     ->required()
                     ->maxLength(255),
@@ -37,13 +45,13 @@ class EmailResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('email')
+                TextColumn::make('email')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('created_at')
+                TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
+                TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
@@ -51,12 +59,12 @@ class EmailResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
+            ->recordActions([
+                EditAction::make(),
             ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -71,9 +79,9 @@ class EmailResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListEmails::route('/'),
-            'create' => Pages\CreateEmail::route('/create'),
-            'edit' => Pages\EditEmail::route('/{record}/edit'),
+            'index' => ListEmails::route('/'),
+            'create' => CreateEmail::route('/create'),
+            'edit' => EditEmail::route('/{record}/edit'),
         ];
     }
 }

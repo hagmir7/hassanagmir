@@ -6,13 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Tag extends Model
 {
     use HasFactory, HasSlug;
-
-
-
 
     protected $fillable = ['name', 'icon', 'description', 'slug'];
 
@@ -32,5 +30,33 @@ class Tag extends Model
             ->generateSlugsFrom('name')
             ->doNotGenerateSlugsOnUpdate()
             ->saveSlugsTo('slug');
+    }
+
+
+    protected $casts = [
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+    ];
+
+    // Relationships
+    public function tutorials(): BelongsToMany
+    {
+        return $this->belongsToMany(Tutorial::class)->withTimestamps();
+    }
+
+    public function publishedTutorials(): BelongsToMany
+    {
+        return $this->tutorials()->where('is_published', true);
+    }
+
+    // Accessors
+    public function getTutorialsCountAttribute()
+    {
+        return $this->tutorials()->count();
+    }
+
+    public function getPublishedTutorialsCountAttribute()
+    {
+        return $this->publishedTutorials()->count();
     }
 }
