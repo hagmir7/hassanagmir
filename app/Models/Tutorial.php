@@ -9,10 +9,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 
 class Tutorial extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes, HasSlug;
 
     protected $fillable = [
         'category_id',
@@ -34,6 +36,15 @@ class Tutorial extends Model
         'updated_at' => 'datetime',
         'deleted_at' => 'datetime',
     ];
+
+    public function getSlugOptions(): SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom('title')
+            ->doNotGenerateSlugsOnUpdate()
+            ->slugsShouldBeNoLongerThan(100)
+            ->saveSlugsTo('slug', 'category_id');
+    }
 
     // Relationships
     public function category(): BelongsTo
