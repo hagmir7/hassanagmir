@@ -2,8 +2,11 @@
 
 namespace App\Filament\Resources\Categories\Schemas;
 
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
+use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Schema;
 
 class CategoryForm
@@ -12,20 +15,26 @@ class CategoryForm
     {
         return $schema
             ->components([
-                TextInput::make('name')
-                    ->required(),
-                TextInput::make('logo'),
-                TextInput::make('slug')
-                    ->required(),
-                Textarea::make('description')
-                    ->columnSpanFull(),
-                TextInput::make('order')
-                    ->required()
-                    ->numeric()
-                    ->default(0),
-                TextInput::make('language_id')
-                    ->required()
-                    ->numeric(),
-            ]);
+            Grid::make()
+                ->schema([
+                    FileUpload::make('logo')
+                        ->image()
+                        ->columnSpanFull()
+                        ->avatar()
+                        ->alignCenter()
+                        ->label(false),
+                    TextInput::make('name')
+                        ->required(),
+
+                    Select::make('language_id')
+                        ->relationship('language', 'name')
+                        ->native(false)
+                        ->required(),
+
+
+                    Textarea::make('description')
+                        ->columnSpanFull(),
+                ])->columnSpanFull()
+            ])->columns(1);
     }
 }
