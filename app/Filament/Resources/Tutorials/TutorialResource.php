@@ -21,7 +21,9 @@ class TutorialResource extends Resource
 {
     protected static ?string $model = Tutorial::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::AcademicCap;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedAcademicCap;
+
+    protected static ?int $navigationSort = 2;
 
 
     public static function form(Schema $schema): Schema
@@ -37,6 +39,12 @@ class TutorialResource extends Resource
     }
 
     protected static string | UnitEnum | null $navigationGroup = 'Education';
+
+
+    public static function getGloballySearchableAttributes(): array
+    {
+        return ['title', 'description', 'meta_keywords'];
+    }
 
     public static function getRelations(): array
     {

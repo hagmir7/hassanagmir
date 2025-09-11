@@ -27,6 +27,8 @@ class SectionResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'title';
 
+    protected static ?int $navigationSort = 3;
+
     public static function form(Schema $schema): Schema
     {
         return SectionForm::configure($schema);

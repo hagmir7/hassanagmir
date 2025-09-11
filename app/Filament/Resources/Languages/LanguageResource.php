@@ -21,7 +21,7 @@ class LanguageResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Language;
 
-    protected static ?string $recordTitleAttribute = 'Languages';
+    protected static ?string $recordTitleAttribute = 'name';
 
 
     protected static string | UnitEnum | null $navigationGroup = 'Settings';

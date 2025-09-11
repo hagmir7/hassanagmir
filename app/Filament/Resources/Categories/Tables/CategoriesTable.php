@@ -14,6 +14,7 @@ class CategoriesTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->reorderable('order')
             ->columns([
                 ImageColumn::make('logo')
                     ->circular(),

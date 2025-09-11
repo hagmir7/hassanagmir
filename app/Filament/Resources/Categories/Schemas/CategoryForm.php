@@ -14,7 +14,7 @@ class CategoryForm
     public static function configure(Schema $schema): Schema
     {
         return $schema
-            ->components([
+        ->components([
             Grid::make()
                 ->schema([
                     FileUpload::make('logo')

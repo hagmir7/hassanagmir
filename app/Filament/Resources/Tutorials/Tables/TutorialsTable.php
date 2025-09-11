@@ -18,6 +18,7 @@ class TutorialsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->reorderable('order')
             ->columns([
                 TextColumn::make('title')
                     ->label(__('Tutorial'))
