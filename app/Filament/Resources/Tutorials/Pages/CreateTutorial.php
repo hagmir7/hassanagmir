@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Tutorials\Pages;
 
 use App\Filament\Resources\Tutorials\TutorialResource;
+use Filament\Actions\Action;
 use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\HtmlString;
@@ -11,11 +12,9 @@ class CreateTutorial extends CreateRecord
 {
     protected static string $resource = TutorialResource::class;
 
-
-    protected function mutateFormDataBeforeSave(array $data): array
+    protected function mutateFormDataBeforeCreate(array $data): array
     {
-        $data['user_id'] = auth()->id();
-
+        $data['user_id'] = auth()->id() ?? 1;
         return $data;
     }
 
@@ -39,4 +38,7 @@ class CreateTutorial extends CreateRecord
                 . '</h1>'
         );
     }
+
+
+
 }

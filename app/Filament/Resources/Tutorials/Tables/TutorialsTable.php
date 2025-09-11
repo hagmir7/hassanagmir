@@ -14,37 +14,47 @@ use Filament\Tables\Table;
 
 class TutorialsTable
 {
+
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('category.name')
-                    ->searchable(),
-                TextColumn::make('user.name')
-                    ->searchable(),
                 TextColumn::make('title')
+                    ->label(__('Tutorial'))
                     ->searchable(),
-                TextColumn::make('slug')
+
+                TextColumn::make('category.name')
+                    ->label(__('Category'))
+                    ->badge()
                     ->searchable(),
+
                 IconColumn::make('is_published')
+                    ->label(__('Public'))
                     ->boolean(),
-                TextColumn::make('order')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('thumbnail')
+
+                TextColumn::make('user.name')
+                    ->label(__('User'))
+                    ->toggleable(isToggledHiddenByDefault: true)
                     ->searchable(),
+
                 TextColumn::make('created_at')
+                    ->label(__('Created at'))
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+
                 TextColumn::make('updated_at')
+                    ->label(__('Updated at'))
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+
                 TextColumn::make('deleted_at')
+                    ->label(__('Deleted at'))
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+
             ])
             ->filters([
                 TrashedFilter::make(),

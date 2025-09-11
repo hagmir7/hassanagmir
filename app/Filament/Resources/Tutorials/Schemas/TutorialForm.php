@@ -33,7 +33,7 @@ class TutorialForm
                         ->label(__('SEO Keywords'))
                         ->placeholder(__('Add keywords'))
                         ->separator(',')
-                        ->helperText(__('Add relevant keywords for SEO (separate with commas)'))
+                        ->splitKeys([',', 'Enter', '،'])
                         ->columnSpan([
                             'default' => 1,
                             'md' => 2,
@@ -63,6 +63,7 @@ class TutorialForm
                         ->label(__('Category'))
                         ->searchable()
                         ->relationship('category', 'name')
+                        ->preload()
                         ->required()
                         ->createOptionForm([
                             Grid::make()

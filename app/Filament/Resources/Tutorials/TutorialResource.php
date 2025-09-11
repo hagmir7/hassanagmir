@@ -22,12 +22,13 @@ class TutorialResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::AcademicCap;
 
-    protected static ?string $recordTitleAttribute = 'Tutorials';
 
     public static function form(Schema $schema): Schema
     {
         return TutorialForm::configure($schema);
     }
+
+    protected static ?string $recordTitleAttribute = "title";
 
     public static function table(Table $table): Table
     {
