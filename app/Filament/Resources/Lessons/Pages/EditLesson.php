@@ -1,30 +1,25 @@
 <?php
 
-namespace App\Filament\Resources\Tutorials\Pages;
+namespace App\Filament\Resources\Lessons\Pages;
 
-use App\Filament\Resources\Tutorials\TutorialResource;
-use Filament\Actions\CreateAction;
+use App\Filament\Resources\Lessons\LessonResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Resources\Pages\EditRecord;
-use Filament\Support\Icons\Heroicon;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\HtmlString;
 
-class EditTutorial extends EditRecord
+class EditLesson extends EditRecord
 {
-    protected static string $resource = TutorialResource::class;
+    protected static string $resource = LessonResource::class;
 
     protected function getHeaderActions(): array
     {
         return [
-            DeleteAction::make()
-                ->icon(Heroicon::OutlinedTrash),
+            DeleteAction::make(),
             ForceDeleteAction::make(),
             RestoreAction::make(),
-            CreateAction::make()
-                ->icon(Heroicon::OutlinedPlusCircle)
         ];
     }
 

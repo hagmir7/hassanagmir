@@ -15,6 +15,7 @@ use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use UnitEnum;
 
 class TutorialResource extends Resource
 {
@@ -34,6 +35,8 @@ class TutorialResource extends Resource
     {
         return TutorialsTable::configure($table);
     }
+
+    protected static string | UnitEnum | null $navigationGroup = 'Education';
 
     public static function getRelations(): array
     {

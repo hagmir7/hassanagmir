@@ -23,6 +23,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use UnitEnum;
 
 class ContactResource extends Resource
 {
@@ -34,6 +35,9 @@ class ContactResource extends Resource
     {
         return Contact::query()->latest();
     }
+
+
+    protected static string | UnitEnum | null $navigationGroup = 'Settings';
 
     public static function getNavigationBadge(): ?string
     {
