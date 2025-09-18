@@ -15,6 +15,13 @@ Route::get('/livewire/update', function () {
 
 
 
+
+Route::get('/tutorial', function () {
+    return view('tutorial');
+});
+
+
+
 Route::get('/', function () {
     $projects = Project::latest()->paginate(4);
     $posts = Post::latest()->paginate(3);

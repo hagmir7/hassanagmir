@@ -22,6 +22,7 @@ class LessonForm
                 Select::make('section_id')
                     ->label(__("Section"))
                     ->relationship('section', 'title')
+                    ->searchable()
                     ->preload()
                     ->required(),
 
