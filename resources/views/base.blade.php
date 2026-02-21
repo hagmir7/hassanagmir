@@ -27,12 +27,11 @@
     <meta property="og:local" content="en" />
     <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
 
-
     <meta name="author" content="www.hassanagmir.com">
     <link rel="canonical" href="{{ request()->fullUrl() }}" />
 
     <link rel="icon" type="image/png" href="/logo.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/logo.pngg" sizes="32x32">
+    <link rel="icon" type="image/png" href="/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/logo.png" sizes="512x512">
     <link rel="icon" type="image/png" href="/logo.png" sizes="192x192">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
