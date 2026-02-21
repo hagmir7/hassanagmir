@@ -11,6 +11,7 @@
     <meta itemprop="name" content="{{ isset($title) ? $title : config('app.name') }}">
     <meta itemprop="description" content="{{ isset($description) ? Str::limit($description, 150) : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
     <meta itemprop="image" content="/logo.png">
+    <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="hass_agmir">
     <meta name="twitter:title" content="{{ isset($title) ? $title : config('app.name') }}">
@@ -25,7 +26,6 @@
     <meta property="og:image" content="/logo.png" />
     <meta property="og:description" content="{{ isset($description) ? Str::limit($description, 150) : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}" />
     <meta property="og:local" content="en" />
-    <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
 
     <meta name="author" content="www.hassanagmir.com">
     <link rel="canonical" href="{{ request()->fullUrl() }}" />
