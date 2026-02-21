@@ -43,7 +43,7 @@
             class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300">
         </div>
         <div class="relative aspect-video overflow-hidden rounded-2xl shadow-2xl">
-            <img class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            <img class="w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 src="{{ Storage::url($post->image) }}" alt="{{ $post->title }}" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
         </div>

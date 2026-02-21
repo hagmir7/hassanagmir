@@ -12,7 +12,7 @@
         <a class="hover:translate-y-1" href="{{ route('blog.show', $post->slug) }}">
             <div class="overflow-hidden rounded-md bg-slate-800">
                 <div class="aspect-w-3 aspect-h-2">
-                    <img class="h-full w-full object-cover object-center" src="{{ Storage::url($post->image) }}" alt="Image post" loading="lazy" />
+                    <img class="w-full object-cover object-center" src="{{ Storage::url($post->image) }}" alt="Image post" loading="lazy" />
                 </div>
                 <div class="px-3 pt-4 pb-6">
                     <h2 class="text-xl font-semibold">{{ $post->title }}</h2>
