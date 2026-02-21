@@ -24,7 +24,10 @@ class CategoryResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'name';
 
-    protected static string | UnitEnum | null $navigationGroup = 'Education';
+    public static function getNavigationGroup(): string|UnitEnum|null
+    {
+        return __('Education');
+    }
 
     protected static ?int $navigationSort = 1;
 
