@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\PageController;
@@ -16,9 +17,7 @@ Route::get('/livewire/update', function () {
 
 
 
-Route::get('/tutorial', function () {
-    return view('tutorial');
-});
+Route::get('/tutorials', [CategoryController::class, 'index'])->name('tutorials');
 
 
 
@@ -29,7 +28,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', [PostController::class, 'list'])->name('home');
+// Route::get('/', [PostController::class, 'list'])->name('home');
 
 
 
