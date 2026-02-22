@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +34,8 @@
     <link rel="icon" type="image/png" href="/logo.png" sizes="512x512">
     <link rel="icon" type="image/png" href="/logo.png" sizes="192x192">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @livewireStyles
 
 
 </head>
@@ -95,5 +96,9 @@
     tags.forEach(function (tag, index) {
         tag.classList.add(...colors[index % colors.length].split(' '));
     });
+
+
 </script>
+
+@livewireScriptConfig
 </html>
