@@ -109,6 +109,9 @@
         .prose p {
             text-align: justify;
             hyphens: auto;
+            padding: 0;
+            margin: 0;
+            font-size: 1rem;
         }
 
         /* Enhanced link hover effects */
