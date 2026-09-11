@@ -100,5 +100,5 @@
 
 </script>
 
-@livewireScriptConfig
+ @livewireScripts
 </html>
