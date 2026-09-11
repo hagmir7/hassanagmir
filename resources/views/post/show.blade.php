@@ -5,7 +5,7 @@
     <!-- Hero Section -->
     <header class="text-center mb-12">
         <h1
-            class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent leading-tight mb-6">
+            class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent leading-tight mb-6">
             {{ $post->title }}
         </h1>
 
@@ -53,8 +53,8 @@
     <div class="mx-auto max-w-4xl">
         <div class="prose prose-lg prose-invert prose-headings:font-bold prose-headings:tracking-tight
                         prose-h1:text-4xl prose-h1:mb-6 prose-h1:text-white
-                        prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:text-gray-100 prose-h2:border-b prose-h2:border-gray-700 prose-h2:pb-2
-                        prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-gray-200
+                        prose-h2:text-2xl prose-h2:mt-6 prose-h2:mb-4 prose-h2:text-gray-100 prose-h2:border-b prose-h2:border-gray-700 prose-h2:pb-2
+                        prose-h3:text-xl prose-h3:mt-4 prose-h3:mb-3 prose-h3:text-gray-200
                         prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6
                         prose-a:text-blue-400 prose-a:no-underline prose-a:font-medium hover:prose-a:text-blue-300 prose-a:transition-colors
                         prose-strong:text-gray-100 prose-strong:font-semibold

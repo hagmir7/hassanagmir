@@ -62,7 +62,7 @@ class PostResource extends Resource
                                     ->image(),
                             ])
                             ->columnSpan(1)
-                    ])
+                    ])->columnSpanFull()
 
 
             ]);
