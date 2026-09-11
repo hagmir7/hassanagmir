@@ -72,6 +72,10 @@
                             prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700 prose-pre:rounded-lg
                             prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8
                             prose-hr:border-gray-700 prose-hr:my-12
+                            prose-table:text-sm prose-table:w-full prose-table:my-8
+                            prose-thead:border-b prose-thead:border-gray-700
+                            prose-th:text-gray-100 prose-th:font-semibold prose-th:px-4 prose-th:py-2 prose-th:text-left
+                            prose-td:px-4 prose-td:py-2 prose-td:border-b prose-td:border-gray-800 prose-td:text-gray-300
                             max-w-none">
                 {!! $post->content !!}
             </div>
@@ -126,6 +130,36 @@
 
         .prose a:hover::after {
             width: 100%;
+        }
+
+        /* Better, smaller tables inside post content */
+        .prose table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-collapse: collapse;
+            background: rgba(31, 41, 55, 0.4);
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+
+        .prose thead {
+            background: rgba(55, 65, 81, 0.6);
+        }
+
+        .prose tbody tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .prose tbody tr:hover {
+            background: rgba(59, 130, 246, 0.08);
+            transition: background 0.2s ease;
+        }
+
+        .prose th,
+        .prose td {
+            white-space: normal;
+            vertical-align: top;
         }
     </style>
 @endsection
