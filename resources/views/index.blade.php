@@ -55,8 +55,6 @@
             </div>
         </div>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-
-
             @foreach ($posts as $post)
                 <a href="{{ route('blog.show', $post->slug) }}"
                     class="group block transition-transform duration-200 hover:-translate-y-1">
@@ -104,8 +102,6 @@
                     </div>
                 </a>
             @endforeach
-
-
         </div>
     </div>
 @endsection
