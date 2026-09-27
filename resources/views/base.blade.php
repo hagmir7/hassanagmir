@@ -42,8 +42,8 @@
     <link rel="icon" type="image/png" href="/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/logo.png" sizes="512x512">
     <link rel="icon" type="image/png" href="/logo.png" sizes="192x192">
-
-    <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
+    <meta name="google-adsense-account" content="ca-pub-7530287625084459">
+    <meta name="google-site-verification" content="XGEq3-4KvQR25m97k5M2z9ROH8tMryF0_KZ_5JMPnAw" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @livewireStyles
