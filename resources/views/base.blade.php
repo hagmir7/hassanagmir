@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ isset($title) ? $title : config('app.name') }}</title>
     <meta name="keywords" content="Hassan agmir, full stack devloper, agmir, hassan, web developer, programmer">
-    <meta name="description" content="{{ isset($description) ? Str::limit($description, 150) : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
+    <meta name="description" content="{{ isset($description) ? Str::limit($description, 150) : " Hassan agmir is a
+        passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating
+        efficient and scalable web applications." }}">
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{ isset($title) ? $title : config('app.name') }}">
-    <meta itemprop="description" content="{{ isset($description) ? Str::limit($description, 150) : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
+    <meta itemprop="description" content="{{ isset($description) ? Str::limit($description, 150) : " Hassan agmir is a
+        passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating
+        efficient and scalable web applications." }}">
     <meta itemprop="image" content="/logo.png">
-    <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
+
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="hass_agmir">
     <meta name="twitter:title" content="{{ isset($title) ? $title : config('app.name') }}">
-    <meta name="twitter:description" content="{{ isset($description) ? Str::limit($description, 150) : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}">
+    <meta name="twitter:description" content="{{ isset($description) ? Str::limit($description, 150) : " Hassan agmir is
+        a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating
+        efficient and scalable web applications." }}">
     <meta name="twitter:creator" content="@hassan_agmir">
     <meta name="twitter:site" content="@hassan_agmir">
     <meta name="twitter:image" content="/logo.png">
@@ -23,7 +30,9 @@
     <meta property="og:type" content="webiste" />
     <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta property="og:image" content="/logo.png" />
-    <meta property="og:description" content="{{ isset($description) ? Str::limit($description, 150) : "Hassan agmir is a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating efficient and scalable web applications." }}" />
+    <meta property="og:description" content="{{ isset($description) ? Str::limit($description, 150) : " Hassan agmir is
+        a passionate Full Stack Developer From Morocco, With over 20 projects under his belt, He specialize in creating
+        efficient and scalable web applications." }}" />
     <meta property="og:local" content="en" />
 
     <meta name="author" content="www.hassanagmir.com">
@@ -33,6 +42,8 @@
     <link rel="icon" type="image/png" href="/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/logo.png" sizes="512x512">
     <link rel="icon" type="image/png" href="/logo.png" sizes="192x192">
+
+    <meta name="google-site-verification" content="uk6gEdEzqoLE2_slNaAwkqYZV73SBBG11JcaPOW7LaA" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @livewireStyles
@@ -50,7 +61,8 @@
                 </div>
             </a>
             <nav>
-                <ul class="flex gap-x-3 font-medium justify-center items-center md:items-end mt-3 md:mt-0 text-gray-200">
+                <ul
+                    class="flex gap-x-3 font-medium justify-center items-center md:items-end mt-3 md:mt-0 text-gray-200">
                     <li class="hover:text-white"><a href="/blogs">Blogs</a></li>
                     <li class="hover:text-white"><a href="/projects">Projects</a></li>
                     <li class="hover:text-white"><a href="/contact">Contact me</a></li>
